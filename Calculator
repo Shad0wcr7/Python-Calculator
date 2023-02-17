@@ -1,0 +1,35 @@
+# ...CALCULATOR....
+
+while True:
+    a = int(input('''Enter 1 for sum
+      2 for differece
+      3 for product
+      4 for remainder
+      5 to exit'''))
+    if a == 1 :
+        b=int(input())
+        c=int(input())
+        print('sum of {} and {} is {} '.format(b,c,b+c))
+    elif a==2:
+        b=int(input('1st Number'))
+        c=int(input('2nd Number'))
+        if b>c:
+            print('Difference between {} and {} is: {} '.format(b,c,b-c))
+        else:
+            print('Difference between {} and {} is :{} '.format(c,b,c-b))
+    elif a==3:
+        b=int(input('1st Number'))
+        c=int(input('2nd Number'))
+        print('Product of {} and {} is: {} '.format(b,c,b*c))
+
+    elif a==4 :
+        b=int(input('1st Number'))
+        c=int(input('2nd Number'))
+        print('remainder of {} divided by {} is :{} '.format(b,c,round(b/c,2)))
+    elif a==5:
+        break
+    else:
+        print("'INVALID OPERATION'")
+
+
+    
